@@ -1,4 +1,4 @@
-# homeassistant_russound
+# Russound Rio
 
 ## Notes
 Initial "working" version, where amp can reconnect after being powered off
