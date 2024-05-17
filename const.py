@@ -1,0 +1,73 @@
+"""Constants for the Russound Rio Max integration."""
+
+# Defaults
+DOMAIN = "russound_rio"
+DEFAULT_NAME = "Russound"
+DEFAULT_HOST = "192.168.16.250"
+DEFAULT_PORT = 9621
+DEFAULT_TIMEOUT = 10.0
+DEFAULT_RECONNECT_DELAY = 10.0
+
+# Connection
+STATE_CONNECTED = "connected"
+STATE_DISCONNECTED = "disconnected"
+STATE_RECONNECTING = "reconnecting"
+STATE_CONNECTION = "connection"
+
+# Signals
+SIGNAL_CONTROLLER_EVENT = "controller"
+SIGNAL_CONNECTION_EVENT = "connection"
+
+# Events
+EVENT_CONTROLLER_CONNECTED = "controller_connected"
+EVENT_CONTROLLER_DISCONNECTED = "controller_disconnected"
+EVENT_CONTROLLER_UPDATED = "controller_updated"
+EVENT_CONNECTION_MESSAGE = "message"
+EVENT_CONNECTION_CONNECTED = "connection_connected"
+EVENT_CONNECTION_RECONNECTING = "connection_reconnecting"
+EVENT_CONNECTION_DISCONNECTED = "connection_disconnected"
+
+# Control Protocol Statuses
+SUCCESS = 0
+ERROR_MESSAGE_TO_LONG = 1
+ERROR_MESSAGE_INVALID_CHARACTERS = 2
+ERROR_CHECKSUM_ERROR = 3
+ERROR_INVALID_DEVICE = 4
+ERROR_DEVICE_UNAVAILABLE = 5
+ERROR_INVALID_ZONE_SYNTAX = 6
+ERROR_INVALID_ZONE = 7
+ERROR_INVALID_REQUEST = 10
+ERROR_INVALID_NUMBER_PARAMETERS = 11
+ERROR_INVALID_PARAMETER = 12
+ERROR_DEVICE_ID_CONFLICT = 13
+ERROR_INVALID_SEQ_NUMBER = 14
+ERROR_INVALID_PASSCODE = 16
+ERROR_INVALID_CONTENT_HANDLE = 17
+ERROR_NETWORK_ERROR = 18
+ERROR_INVALID_SERIAL_SYNTAX = 19
+ERROR_DEVICE_IN_STANDBY = 20
+ERROR_REJECTED_WHILE_PAIRED = 32
+
+ERROR_UNDETERMINED_ERROR = 999
+RESPONSE_ERROR = {
+    SUCCESS: "Success",
+    ERROR_MESSAGE_TO_LONG: "Message too long",
+    ERROR_MESSAGE_INVALID_CHARACTERS: "Message contains invalid characters",
+    ERROR_CHECKSUM_ERROR: "Checksum error",
+    ERROR_INVALID_DEVICE: "Invalid device",
+    ERROR_DEVICE_UNAVAILABLE: "Device unavailable",
+    ERROR_INVALID_ZONE_SYNTAX: "Invalid zone syntax",
+    ERROR_INVALID_ZONE: "Invalid zone",
+    ERROR_INVALID_REQUEST: "Invalid request",
+    ERROR_INVALID_NUMBER_PARAMETERS: "Invalid number of parameters",
+    ERROR_INVALID_PARAMETER: "Invalid parameter",
+    ERROR_DEVICE_ID_CONFLICT: "Device identifier conflict",
+    ERROR_INVALID_SEQ_NUMBER: "Invalid sequence number",
+    ERROR_INVALID_PASSCODE: "Invalid passcode",
+    ERROR_INVALID_CONTENT_HANDLE: "Invalid content handle",
+    ERROR_NETWORK_ERROR: "Network error",
+    ERROR_INVALID_SERIAL_SYNTAX: "Invalid serial syntax",
+    ERROR_DEVICE_IN_STANDBY: "Device in standby",
+    ERROR_REJECTED_WHILE_PAIRED: "Command is rejected while in paired state",
+    ERROR_UNDETERMINED_ERROR: "Undetermined error",
+}

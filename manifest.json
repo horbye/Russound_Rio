@@ -1,0 +1,8 @@
+{
+  "domain": "russound_rio",
+  "name": "Russound",
+  "version": "2.0.1",
+  "documentation": "https://www.home-assistant.io/integrations/russound_rio",
+  "codeowners": [],
+  "config_flow": true
+}
